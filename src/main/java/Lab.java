@@ -32,6 +32,17 @@ public class Lab {
      * @return a string representation of all values of nums, with the values separated by spaces.
      */
     public String arrayToString(int[] nums){
-        return "";
+       // Step 1: Initialize an empty string to hold the result
+        String str = "";
+
+        // Step 2: Loop through the array
+        for (int i = 0; i < nums.length; i++) {
+            // Step 3: Append the current number and a space
+            // Java automatically converts the int to a String here
+            str += nums[i] + " ";
+        }
+
+        // Step 4: Return the final built string
+        return str;
     }
 }
